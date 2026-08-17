@@ -1,6 +1,6 @@
 ---
 name: writing-style
-description: Moulik's prose style for anything written in his voice — reports, reviews, reflections, docs, emails, messages. Use whenever writing or editing prose the user will present as his own.
+description: Moulik's prose style. Use for ALL writing produced on his behalf — PR descriptions, forms, emails, documents, reports, reviews, reflections, messages, applications, commit messages. If the text will be read as his words, apply this skill before writing.
 ---
 
 # Writing Style
