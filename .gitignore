@@ -1,0 +1,6 @@
+# Per-skill working folders. These hold test runs, comparisons, and scratch
+# material that can contain personal data, so they never get pushed.
+*/test/
+*/comparisons/
+*/scratch/
+.DS_Store
