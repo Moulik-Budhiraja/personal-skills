@@ -9,9 +9,21 @@ Skills I use with AI agents. Each skill is a folder with a SKILL.md.
 
 ## Installing a skill
 
-Copy the skill folder to `~/.agents/skills/` and symlink it into `~/.claude/skills/`:
+From this repo:
 
 ```sh
-cp -r <skill-name> ~/.agents/skills/<skill-name>
+npx skills add Moulik-Budhiraja/personal-skills -g -a claude-code -s <skill-name> -y
+```
+
+From a local checkout:
+
+```sh
+npx skills add ./<skill-name> -g -a claude-code -y
+```
+
+`-g` installs globally, `-a claude-code` targets Claude Code, `-s` picks a skill from the repo (use `-s '*'` for all). If the CLI copies the skill directly into `~/.claude/skills/` instead of placing it in `~/.agents/skills/` with a symlink, fix the layout:
+
+```sh
+mv ~/.claude/skills/<skill-name> ~/.agents/skills/<skill-name>
 ln -s ../../.agents/skills/<skill-name> ~/.claude/skills/<skill-name>
 ```
